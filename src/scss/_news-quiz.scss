@@ -45,6 +45,29 @@
 
 }
 
+.quiz-question-answer {
+  // background-color: #dae7fc;
+  background-color: #e6effd;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0px auto 30px auto;
+}
+
+.question-option {
+  display: none;
+  padding:25px 15px 0px 15px;
+}
+
+.question-correctness-header {
+    display: none;
+    padding: 25px 15px 0px 15px;
+}
+
+.question-explaination {
+  display: none;
+  padding:0px 15px 0.5px 15px;
+}
+
 .correctAnswer {
     border-color: #95c198 !important;
     background-color: #95c198 !important;

@@ -45,14 +45,14 @@
     </div>
 </div>
 <br>
-<div style="background-color:#7aaaf317;max-width:600px;margin:0px auto 30px auto">
-    <h2 id="q{{ section.questionNumber }}-exp-correct" style="display:none;padding:25px 15px 0px 15px">
+<div class="quiz-question-answer">
+    <h2 id="q{{ section.questionNumber }}-exp-correct" class="question-correctness-header">
         Correct!
     </h2>
-    <h2 id="q{{ section.questionNumber }}-exp-wrong" style="display:none;padding:25px 15px 0px 15px">
+    <h2 id="q{{ section.questionNumber }}-exp-wrong" class="question-correctness-header">
         Not quite!
     </h2>
-    <div id="q{{ section.questionNumber }}-exp" style="display:none;padding:0px 15px 0.5px 15px">
+    <div id="q{{ section.questionNumber }}-exp" class ="question-explaination">
         {{ section.explanation | markdown }}
 
         {% if section.articleTitle %}

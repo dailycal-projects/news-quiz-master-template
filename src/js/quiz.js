@@ -1,5 +1,6 @@
 var numQuestions = 10;
 var numOptions = 4;
+var numCorrect = 0;
 
 $(document).ready(function() {
 
@@ -12,7 +13,7 @@ $(document).ready(function() {
             if ($("#" + buttonId).length) {
 
                 if ($("#" + buttonId).hasClass('correct')) {
-
+                    numCorrect ++;
                     $("#" + buttonId).click({q: numQuestion}, function(data) {
                         var currId = data.target.id
                         var expIdCopy = "q" + data.data.q + "-exp";
